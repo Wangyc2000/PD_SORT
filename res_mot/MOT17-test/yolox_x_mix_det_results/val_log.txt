@@ -1,0 +1,1215 @@
+2023-11-10 13:38:11.247 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 13:38:11.713 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-10 13:38:11.713 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-10 13:38:11.734 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.02s)
+2023-11-10 13:38:11.734 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-10 13:38:11.735 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-10 13:38:11.889 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-10 13:38:12.525 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-10 13:38:12.525 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-10 13:38:33.955 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-10 13:38:54.349 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-10 13:39:14.557 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-10 13:40:29.788 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-10 13:41:44.149 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-10 13:42:58.700 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-10 13:43:48.484 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-10 13:44:38.391 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-10 13:45:27.310 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-10 13:45:50.635 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-10 13:46:14.012 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-10 13:46:37.541 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-10 13:47:06.766 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-10 13:47:35.601 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-10 13:48:04.945 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-10 13:48:44.105 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-DPM.txt
+2023-11-10 13:49:22.431 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-FRCNN.txt
+2023-11-10 13:50:01.828 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-SDP.txt
+2023-11-10 13:50:35.796 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-DPM.txt
+2023-11-10 13:51:09.937 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-FRCNN.txt
+2023-11-10 13:51:44.745 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-SDP.txt
+2023-11-10 13:51:45.726 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:545 - Evaluate in main process...
+2023-11-10 13:51:48.936 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - Loading and preparing results...
+2023-11-10 13:51:50.355 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - DONE (t=1.42s)
+2023-11-10 13:51:50.355 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-10 13:51:50.458 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-10 13:51:51.766 | INFO     | __main__:main:157 - 
+Average forward time: 29.01 ms, Average track time: 6.17 ms, Average inference time: 35.18 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-11-10 13:51:51.767 | INFO     | __main__:main:167 - Found 21 groundtruths and 42 test files.
+2023-11-10 13:51:51.767 | INFO     | __main__:main:168 - Available LAP solvers ['lap', 'scipy']
+2023-11-10 13:51:51.767 | INFO     | __main__:main:169 - Default LAP solver 'lap'
+2023-11-10 13:51:51.767 | INFO     | __main__:main:170 - Loading files.
+2023-11-10 13:51:56.012 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-10 13:51:56.012 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-10 13:51:56.012 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-10 13:51:56.012 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-10 13:51:56.012 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-10 13:51:56.012 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-10 13:51:56.013 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-10 13:51:56.014 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-10 13:51:56.014 | INFO     | __main__:main:178 - Running metrics
+2023-11-10 13:51:56.018 | INFO     | __main__:main:199 - Completed
+2023-11-10 15:01:45.350 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 15:01:45.790 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-10 15:01:45.790 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-10 15:01:46.052 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.26s)
+2023-11-10 15:01:46.052 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-10 15:01:46.071 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-10 15:01:46.400 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-10 15:01:46.620 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-10 15:01:46.620 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-10 15:02:15.845 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-FRCNN.txt
+2023-11-10 15:03:07.907 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-FRCNN.txt
+2023-11-10 15:03:42.951 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-FRCNN.txt
+2023-11-10 15:04:05.754 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-FRCNN.txt
+2023-11-10 15:04:34.477 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-FRCNN.txt
+2023-11-10 15:05:13.752 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-FRCNN.txt
+2023-11-10 15:05:46.659 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-FRCNN.txt
+2023-11-10 15:05:46.887 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:545 - Evaluate in main process...
+2023-11-10 15:05:47.560 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - Loading and preparing results...
+2023-11-10 15:05:47.993 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - DONE (t=0.43s)
+2023-11-10 15:05:47.993 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-10 15:05:48.012 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-10 15:05:48.901 | INFO     | __main__:main:157 - 
+Average forward time: 28.94 ms, Average track time: 5.32 ms, Average inference time: 34.25 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.957
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.715
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.830
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.786
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.589
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+
+2023-11-10 15:05:48.901 | INFO     | __main__:main:167 - Found 21 groundtruths and 14 test files.
+2023-11-10 15:05:48.901 | INFO     | __main__:main:168 - Available LAP solvers ['lap', 'scipy']
+2023-11-10 15:05:48.901 | INFO     | __main__:main:169 - Default LAP solver 'lap'
+2023-11-10 15:05:48.901 | INFO     | __main__:main:170 - Loading files.
+2023-11-10 15:05:51.495 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-13-FRCNN...
+2023-11-10 15:05:51.697 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-11-FRCNN...
+2023-11-10 15:05:51.916 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-05-FRCNN...
+2023-11-10 15:05:52.188 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-09-FRCNN...
+2023-11-10 15:05:52.318 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-10-FRCNN...
+2023-11-10 15:05:52.505 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-04-FRCNN...
+2023-11-10 15:05:53.024 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-02-FRCNN...
+2023-11-10 15:05:53.232 | INFO     | __main__:main:178 - Running metrics
+2023-11-10 15:05:54.053 | INFO     | __main__:main:199 - Completed
+2023-11-10 15:10:52.126 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 15:10:52.536 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-10 15:10:52.537 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-10 15:10:52.558 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.02s)
+2023-11-10 15:10:52.558 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-10 15:10:52.559 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-10 15:10:52.682 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-10 15:10:52.912 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-10 15:10:52.913 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-10 15:11:14.467 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-10 15:11:34.664 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-10 15:11:54.809 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-10 15:13:12.674 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-10 15:14:30.126 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-10 15:15:46.967 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-10 15:16:37.273 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-10 15:17:27.443 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-10 15:18:16.842 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-10 15:18:40.086 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-10 15:19:02.982 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-10 15:19:26.577 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-10 15:19:56.624 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-10 15:20:26.501 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-10 15:20:56.352 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-10 15:21:36.290 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-DPM.txt
+2023-11-10 15:22:15.473 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-FRCNN.txt
+2023-11-10 15:22:55.428 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-SDP.txt
+2023-11-10 15:23:29.644 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-DPM.txt
+2023-11-10 15:24:04.350 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-FRCNN.txt
+2023-11-10 15:24:39.022 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-SDP.txt
+2023-11-10 15:24:40.020 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:545 - Evaluate in main process...
+2023-11-10 15:24:43.233 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - Loading and preparing results...
+2023-11-10 15:24:44.649 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - DONE (t=1.42s)
+2023-11-10 15:24:44.650 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-10 15:24:44.753 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-10 15:24:46.419 | INFO     | __main__:main:157 - 
+Average forward time: 28.93 ms, Average track time: 6.79 ms, Average inference time: 35.72 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-11-10 15:24:46.419 | INFO     | __main__:main:167 - Found 21 groundtruths and 42 test files.
+2023-11-10 15:24:46.420 | INFO     | __main__:main:168 - Available LAP solvers ['lap', 'scipy']
+2023-11-10 15:24:46.420 | INFO     | __main__:main:169 - Default LAP solver 'lap'
+2023-11-10 15:24:46.420 | INFO     | __main__:main:170 - Loading files.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-10 15:24:50.141 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-10 15:24:50.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-10 15:24:50.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-10 15:24:50.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-10 15:24:50.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-10 15:24:50.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-10 15:24:50.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-10 15:24:50.142 | INFO     | __main__:main:178 - Running metrics
+2023-11-10 15:24:50.147 | INFO     | __main__:main:199 - Completed
+2023-11-10 16:10:21.540 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 16:10:21.954 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-10 16:10:21.955 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-10 16:10:22.412 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.46s)
+2023-11-10 16:10:22.412 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-10 16:10:22.449 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-10 16:10:22.839 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-10 16:10:23.172 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-10 16:10:23.172 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-10 16:10:52.291 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-DPM.txt
+2023-11-10 16:11:20.031 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-SDP.txt
+2023-11-10 16:12:11.709 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-DPM.txt
+2023-11-10 16:13:03.769 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-SDP.txt
+2023-11-10 16:13:39.496 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-DPM.txt
+2023-11-10 16:14:14.407 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-SDP.txt
+2023-11-10 16:14:37.304 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-DPM.txt
+2023-11-10 16:14:59.993 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-SDP.txt
+2023-11-10 16:15:29.696 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-DPM.txt
+2023-11-10 16:15:59.366 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-SDP.txt
+2023-11-10 16:16:39.270 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-DPM.txt
+2023-11-10 16:17:18.392 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-SDP.txt
+2023-11-10 16:17:52.374 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-DPM.txt
+2023-11-10 16:18:26.039 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-SDP.txt
+2023-11-10 16:18:26.452 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:545 - Evaluate in main process...
+2023-11-10 16:18:27.785 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - Loading and preparing results...
+2023-11-10 16:18:28.593 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - DONE (t=0.81s)
+2023-11-10 16:18:28.594 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-10 16:18:28.639 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-10 16:18:30.494 | INFO     | __main__:main:157 - 
+Average forward time: 29.03 ms, Average track time: 5.25 ms, Average inference time: 34.29 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.957
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.715
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.830
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.786
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.589
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+
+2023-11-10 16:18:30.495 | INFO     | __main__:main:167 - Found 21 groundtruths and 70 test files.
+2023-11-10 16:18:30.495 | INFO     | __main__:main:168 - Available LAP solvers ['lap', 'scipy']
+2023-11-10 16:18:30.495 | INFO     | __main__:main:169 - Default LAP solver 'lap'
+2023-11-10 16:18:30.496 | INFO     | __main__:main:170 - Loading files.
+2023-11-10 16:18:35.096 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-13-SDP...
+2023-11-10 16:18:35.405 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-10 16:18:35.405 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-10 16:18:35.406 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-02-SDP...
+2023-11-10 16:18:35.611 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-10 16:18:35.611 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-09-SDP...
+2023-11-10 16:18:35.732 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-04-SDP...
+2023-11-10 16:18:36.151 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-10 16:18:36.151 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-10 16:18:36.151 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-10 16:18:36.151 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-10 16:18:36.151 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-10-DPM...
+2023-11-10 16:18:36.334 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-10 16:18:36.335 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-10 16:18:36.335 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-10 16:18:36.335 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-10-SDP...
+2023-11-10 16:18:36.643 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-11-DPM...
+2023-11-10 16:18:36.851 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-04-DPM...
+2023-11-10 16:18:37.269 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-10 16:18:37.270 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-10 16:18:37.270 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-10 16:18:37.270 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-10 16:18:37.270 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-10 16:18:37.270 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-05-SDP...
+2023-11-10 16:18:37.455 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-09-DPM...
+2023-11-10 16:18:37.581 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-10 16:18:37.581 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-05-DPM...
+2023-11-10 16:18:37.898 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-10 16:18:37.898 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-10 16:18:37.898 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-13-DPM...
+2023-11-10 16:18:38.090 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-02-DPM...
+2023-11-10 16:18:38.287 | INFO     | __main__:compare_dataframes:31 - Comparing MOT17-11-SDP...
+2023-11-10 16:18:38.503 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-10 16:18:38.503 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-10 16:18:38.503 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-10 16:18:38.503 | INFO     | __main__:main:178 - Running metrics
+2023-11-10 16:18:40.112 | INFO     | __main__:main:199 - Completed
+2023-11-15 14:57:07.884 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-15 14:57:20.349 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-15 14:57:20.358 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-15 14:57:20.427 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.07s)
+2023-11-15 14:57:20.433 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-15 14:57:20.435 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-15 14:57:20.836 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-15 14:57:22.003 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-15 14:57:22.003 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-15 14:58:45.179 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-15 15:00:05.412 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-15 15:01:25.880 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-15 15:07:51.138 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-15 15:14:21.866 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-15 15:20:42.364 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-15 15:23:50.742 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-15 15:27:01.973 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-15 15:30:14.309 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-15 15:31:53.888 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-15 15:33:28.476 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-15 15:35:10.784 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-15 15:37:17.059 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-15 15:39:23.437 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-15 15:41:34.474 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-15 15:44:03.714 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-DPM.txt
+2023-11-15 15:46:31.088 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-FRCNN.txt
+2023-11-15 15:48:59.464 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-SDP.txt
+2023-11-15 15:51:19.783 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-DPM.txt
+2023-11-15 15:53:31.143 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-FRCNN.txt
+2023-11-15 15:55:45.458 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-SDP.txt
+2023-11-15 15:55:47.663 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:545 - Evaluate in main process...
+2023-11-15 15:55:54.784 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - Loading and preparing results...
+2023-11-15 15:55:58.592 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:574 - DONE (t=3.81s)
+2023-11-15 15:55:58.592 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-15 15:55:58.873 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-15 15:56:03.824 | INFO     | __main__:main:157 - 
+Average forward time: 95.00 ms, Average track time: 73.92 ms, Average inference time: 168.93 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-11-15 15:56:03.834 | INFO     | __main__:main:167 - Found 21 groundtruths and 42 test files.
+2023-11-15 15:56:03.834 | INFO     | __main__:main:168 - Available LAP solvers ['lap', 'scipy']
+2023-11-15 15:56:03.834 | INFO     | __main__:main:169 - Default LAP solver 'lap'
+2023-11-15 15:56:03.834 | INFO     | __main__:main:170 - Loading files.
+2023-11-15 15:56:13.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-15 15:56:13.142 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-15 15:56:13.145 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-15 15:56:13.146 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-15 15:56:13.146 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-15 15:56:13.146 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-15 15:56:13.146 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-15 15:56:13.146 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-15 15:56:13.146 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-15 15:56:13.147 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-15 15:56:13.148 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-15 15:56:13.148 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-15 15:56:13.148 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-15 15:56:13.148 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-15 15:56:13.148 | WARNING  | __main__:compare_dataframes:38 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-15 15:56:13.148 | INFO     | __main__:main:178 - Running metrics
+2023-11-15 15:56:13.158 | INFO     | __main__:main:199 - Completed
+2023-11-28 22:21:48.056 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-28 22:21:48.486 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-28 22:21:48.486 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-28 22:21:48.509 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.02s)
+2023-11-28 22:21:48.509 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-28 22:21:48.510 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-28 22:21:48.676 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-28 22:21:49.052 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-28 22:21:49.052 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-28 22:21:50.125 | ERROR    | yolox.core.launch:launch:90 - An error has been caught in function 'launch', process 'MainProcess' (3038044), thread 'MainThread' (140451207296832):
+Traceback (most recent call last):
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 224, in <module>
+    launch(
+    └ <function launch at 0x7fbd3d676700>
+
+> File "/home/wangyc/My_OC_SORT/yolox/core/launch.py", line 90, in launch
+    main_func(*args)
+    │          └ (╒══════════════════╤══════════════════════════════════════════════════════════════════════════════════════════════╕
+    │            │ keys  ...
+    └ <function main at 0x7fbc3d0aadc0>
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 163, in main
+    *_, summary = evaluator.evaluate_ocsort(
+                  │         └ <function MOTEvaluator.evaluate_ocsort at 0x7fbc73d0fb80>
+                  └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fbc14208c70>
+
+  File "/home/wangyc/My_OC_SORT/yolox/evaluators/mot_evaluator.py", line 486, in evaluate_ocsort
+    online_targets = tracker.update(outputs[0], imgs, np_imgs[0].numpy(), info_imgs, self.img_size, tag)  # for CMC
+                     │       │      │           │     │                   │          │    │         └ 'MOT17-01-DPM:1'
+                     │       │      │           │     │                   │          │    └ (800, 1440)
+                     │       │      │           │     │                   │          └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fbc14208c70>
+                     │       │      │           │     │                   └ [tensor([1080]), tensor([1920]), tensor([1]), tensor([1]), ['MOT17-01-DPM/img1/000001.jpg']]
+                     │       │      │           │     └ tensor([[[[23, 25, 25],
+                     │       │      │           │                 [22, 24, 24],
+                     │       │      │           │                 [20, 22, 22],
+                     │       │      │           │                 ...,
+                     │       │      │           │                 [17, 23, 22],
+                     │       │      │           │                 [17,...
+                     │       │      │           └ tensor([[[[-1.6895, -1.7236, -1.7930,  ..., -0.1656, -0.1656, -0.1656],
+                     │       │      │                       [-1.6729, -1.7070, -1.7578,  ..., -0.1656, ...
+                     │       │      └ [tensor([[7.2750e+02, 3.3875e+02, 7.8350e+02, 4.7675e+02, 9.9609e-01, 9.3066e-01,
+                     │       │                 0.0000e+00],
+                     │       │                [5.3450e+02, ...
+                     │       └ <function OCSort.update at 0x7fbc73d0f3a0>
+                     └ <trackers.ocsort_tracker.ocsort.OCSort object at 0x7fbc3b5d0c10>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/ocsort.py", line 324, in update
+    transform = self.cmc.compute_affine(img_numpy, dets[:, :4], tag)
+                │    │   │              │          │            └ 'MOT17-01-DPM:1'
+                │    │   │              │          └ array([[9.82125061e+02, 4.57312500e+02, 1.05772498e+03, 6.43612549e+02,
+                │    │   │              │                    9.27028656e-01, 1.51638745e+03],
+                │    │   │              │                   [7.21...
+                │    │   │              └ array([[[23, 25, 25],
+                │    │   │                        [22, 24, 24],
+                │    │   │                        [20, 22, 22],
+                │    │   │                        ...,
+                │    │   │                        [17, 23, 22],
+                │    │   │                        [17, 23, 22],
+                │    │   │                  ...
+                │    │   └ <function CMCComputer.compute_affine at 0x7fbc73d0daf0>
+                │    └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fbc3b5d0a90>
+                └ <trackers.ocsort_tracker.ocsort.OCSort object at 0x7fbc3b5d0c10>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/cmc.py", line 85, in compute_affine
+    A = self.comp_function(img, mask, tag)
+        │    │             │    │     └ 'MOT17-01-DPM:1'
+        │    │             │    └ array([[1, 1, 1, ..., 1, 1, 1],
+        │    │             │             [1, 1, 1, ..., 1, 1, 1],
+        │    │             │             [1, 1, 1, ..., 1, 1, 1],
+        │    │             │             ...,
+        │    │             │             [1, 1, 1, ...
+        │    │             └ array([[25, 24, 22, ..., 22, 22, 22],
+        │    │                      [26, 25, 22, ..., 22, 22, 22],
+        │    │                      [27, 25, 23, ..., 22, 22, 22],
+        │    │                      ...,...
+        │    └ <bound method CMCComputer._affine_file of <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fbc3b5d0a90>>
+        └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fbc3b5d0a90>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/cmc.py", line 93, in _affine_file
+    self._load_file(name)
+    │    │          └ 'MOT17-01-DPM'
+    │    └ <function CMCComputer._load_file at 0x7fbc73d0dd30>
+    └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fbc3b5d0a90>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/cmc.py", line 162, in _load_file
+    with open(self.file_names[name], "r") as fp:
+              │    │          └ 'MOT17-01-DPM'
+              │    └ {'dancetrack0065': './cache/cmc_files/DanceTrack/GMC-dancetrack-0065.txt', 'dancetrack0069': './cache/cmc_files/DanceTrack/GM...
+              └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fbc3b5d0a90>
+
+KeyError: 'MOT17-01-DPM'
+2023-11-28 22:32:14.869 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-28 22:32:15.604 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-28 22:32:15.604 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-28 22:32:15.618 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-11-28 22:32:15.618 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-28 22:32:15.620 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-28 22:32:15.928 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-28 22:32:16.292 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-28 22:32:16.292 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-28 22:41:52.221 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-28 22:41:52.923 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-28 22:41:52.924 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-28 22:41:52.938 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-11-28 22:41:52.938 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-28 22:41:52.939 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-28 22:41:53.241 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-28 22:41:53.594 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-28 22:41:53.594 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-28 23:03:10.084 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-28 23:03:10.836 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-28 23:03:10.836 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-28 23:03:10.850 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-11-28 23:03:10.850 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-28 23:03:10.852 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-28 23:03:11.206 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-28 23:03:11.563 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-28 23:03:11.563 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-28 23:05:03.209 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-28 23:05:03.625 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-28 23:05:03.625 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-28 23:05:03.640 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-11-28 23:05:03.640 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-28 23:05:03.641 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-28 23:05:03.957 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-28 23:05:04.337 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-28 23:05:04.338 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-28 23:05:25.882 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-28 23:05:46.194 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-28 23:06:06.964 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-28 23:07:24.211 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-28 23:08:41.854 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-28 23:09:59.283 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-28 23:10:45.336 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-28 23:11:31.642 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-28 23:12:17.953 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-28 23:12:41.128 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-28 23:13:03.826 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-28 23:13:27.012 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-28 23:13:56.054 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-28 23:14:25.118 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-28 23:14:54.321 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-28 23:15:13.510 | ERROR    | yolox.core.launch:launch:90 - An error has been caught in function 'launch', process 'MainProcess' (3045384), thread 'MainThread' (140660499523392):
+Traceback (most recent call last):
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 224, in <module>
+    launch(
+    └ <function launch at 0x7feddf75e700>
+
+> File "/home/wangyc/My_OC_SORT/yolox/core/launch.py", line 90, in launch
+    main_func(*args)
+    │          └ (╒══════════════════╤══════════════════════════════════════════════════════════════════════════════════════════════╕
+    │            │ keys  ...
+    └ <function main at 0x7fecf7dbae50>
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 163, in main
+    *_, summary = evaluator.evaluate_ocsort(
+                  │         └ <function MOTEvaluator.evaluate_ocsort at 0x7fed2a2cdc10>
+                  └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fecf7d13a60>
+
+  File "/home/wangyc/My_OC_SORT/yolox/evaluators/mot_evaluator.py", line 486, in evaluate_ocsort
+    online_targets = tracker.update(outputs[0], imgs, np_imgs[0].numpy(), info_imgs, self.img_size, tag)  # for CMC
+                     │       │      │           │     │                   │          │    │         └ 'MOT17-12-DPM:445'
+                     │       │      │           │     │                   │          │    └ (800, 1440)
+                     │       │      │           │     │                   │          └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fecf7d13a60>
+                     │       │      │           │     │                   └ [tensor([1080]), tensor([1920]), tensor([445]), tensor([16]), ['MOT17-12-DPM/img1/000445.jpg']]
+                     │       │      │           │     └ tensor([[[[  3,   3,   3],
+                     │       │      │           │                 [  3,   3,   3],
+                     │       │      │           │                 [  3,   3,   3],
+                     │       │      │           │                 ...,
+                     │       │      │           │                 [133,  95,  60],
+                     │       │      │           │         ...
+                     │       │      │           └ tensor([[[[-2.0664, -2.0664, -2.0664,  ..., -0.1656, -0.1656, -0.1656],
+                     │       │      │                       [-2.0664, -2.0664, -2.0664,  ..., -0.1656, ...
+                     │       │      └ [tensor([[-7.4750e+01, -2.6650e+02,  9.2500e+02,  1.8160e+03,  2.0593e-01,
+                     │       │                  7.6562e-01,  0.0000e+00]], device='cuda:...
+                     │       └ <function OCSort.update at 0x7fed2a2cd430>
+                     └ <trackers.ocsort_tracker.ocsort.OCSort object at 0x7fecbc1de730>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/ocsort.py", line 363, in update
+    matched, unmatched_dets, unmatched_trks = associate(
+                                              └ <function associate at 0x7fed2aa53790>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/association.py", line 386, in associate
+    pd_level_cost = cost_pd_level(detections, previous_obs, pdl_weight)
+                    │             │           │             └ 0.2
+                    │             │           └ array([[ 8.04017410e+01,  1.60061249e+02,  4.68920868e+02,
+                    │             │                      1.13359680e+03,  7.80169964e-01,  1.10834998e+03],
+                    │             │                   ...
+                    │             └ array([], shape=(0, 6), dtype=float32)
+                    └ <function cost_pd_level at 0x7fed2aa53700>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/association.py", line 291, in cost_pd_level
+    min_pd_dets = np.min(pd_dets)
+                  │  │   └ array([], dtype=float32)
+                  │  └ <function amin at 0x7fee11ab2820>
+                  └ <module 'numpy' from '/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/numpy/__init__.py'>
+
+  File "<__array_function__ internals>", line 180, in amin
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2918, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+           │              │  │  │               │           └ None
+           │              │  │  │               └ None
+           │              │  │  └ <ufunc 'minimum'>
+           │              │  └ <module 'numpy' from '/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/numpy/__init__.py'>
+           │              └ array([], dtype=float32)
+           └ <function _wrapreduction at 0x7fee11aa6430>
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+           │     │      │    │     │      │      └ {}
+           │     │      │    │     │      └ None
+           │     │      │    │     └ None
+           │     │      │    └ None
+           │     │      └ array([], dtype=float32)
+           │     └ <method 'reduce' of 'numpy.ufunc' objects>
+           └ <ufunc 'minimum'>
+
+ValueError: zero-size array to reduction operation minimum which has no identity
+2023-11-29 10:40:51.163 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 10:40:51.577 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 10:40:51.577 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 10:40:51.591 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-11-29 10:40:51.591 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 10:40:51.592 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 10:40:51.781 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 10:40:52.149 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 10:40:52.150 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 10:41:08.975 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-29 10:41:25.335 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-29 10:41:41.355 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-29 10:42:39.890 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-29 10:43:38.989 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-29 10:44:38.088 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-29 10:45:16.087 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-29 10:45:54.294 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-29 10:46:32.907 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-29 10:46:51.298 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-29 10:47:09.499 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-29 10:47:27.958 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-29 10:47:51.034 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-29 10:48:14.274 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-29 10:48:37.366 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-29 10:49:08.653 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-DPM.txt
+2023-11-29 10:49:39.713 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-FRCNN.txt
+2023-11-29 10:50:11.478 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-SDP.txt
+2023-11-29 10:50:38.857 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-DPM.txt
+2023-11-29 10:51:05.742 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-FRCNN.txt
+2023-11-29 10:51:32.843 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-SDP.txt
+2023-11-29 10:51:33.824 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 10:51:36.960 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 10:51:38.352 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=1.39s)
+2023-11-29 10:51:38.352 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 10:51:38.459 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 10:51:40.068 | INFO     | __main__:main:167 - 
+Average forward time: 20.17 ms, Average track time: 7.62 ms, Average inference time: 27.78 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-11-29 10:51:40.076 | INFO     | __main__:main:177 - Found 21 groundtruths and 42 test files.
+2023-11-29 10:51:40.076 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 10:51:40.076 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 10:51:40.076 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 10:51:43.682 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-29 10:51:43.682 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-29 10:51:43.682 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-29 10:51:43.682 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-29 10:51:43.682 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-29 10:51:43.683 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-29 10:51:43.684 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-29 10:51:43.684 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 10:51:43.688 | INFO     | __main__:main:209 - Completed
+2023-11-29 10:56:56.713 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 10:56:57.115 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 10:56:57.116 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 10:56:57.401 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.28s)
+2023-11-29 10:56:57.401 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 10:56:57.419 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 10:56:57.731 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 10:56:58.045 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 10:56:58.046 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 10:57:21.083 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-FRCNN.txt
+2023-11-29 10:58:00.496 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-FRCNN.txt
+2023-11-29 10:58:27.448 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-FRCNN.txt
+2023-11-29 10:58:45.928 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-FRCNN.txt
+2023-11-29 10:59:09.639 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-FRCNN.txt
+2023-11-29 10:59:40.649 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-FRCNN.txt
+2023-11-29 11:00:06.766 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-FRCNN.txt
+2023-11-29 11:00:06.985 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 11:00:07.644 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 11:00:08.060 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=0.42s)
+2023-11-29 11:00:08.060 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 11:00:08.082 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 11:00:08.961 | INFO     | __main__:main:167 - 
+Average forward time: 21.03 ms, Average track time: 6.26 ms, Average inference time: 27.29 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.957
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.715
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.830
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.786
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.590
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+
+2023-11-29 11:00:08.962 | INFO     | __main__:main:177 - Found 21 groundtruths and 56 test files.
+2023-11-29 11:00:08.962 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 11:00:08.962 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 11:00:08.962 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 11:00:13.339 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-FRCNN...
+2023-11-29 11:00:13.532 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-29 11:00:13.532 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-29 11:00:13.533 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-29 11:00:13.533 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-FRCNN...
+2023-11-29 11:00:13.742 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-FRCNN...
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-29 11:00:14.003 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-29 11:00:14.003 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-FRCNN...
+2023-11-29 11:00:14.128 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-29 11:00:14.128 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-29 11:00:14.128 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-FRCNN...
+2023-11-29 11:00:14.309 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-29 11:00:14.309 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-29 11:00:14.309 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-29 11:00:14.309 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-29 11:00:14.309 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-29 11:00:14.309 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-FRCNN...
+2023-11-29 11:00:14.810 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-29 11:00:14.810 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-FRCNN...
+2023-11-29 11:00:15.007 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-29 11:00:15.007 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-29 11:00:15.007 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-29 11:00:15.007 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 11:00:15.799 | INFO     | __main__:main:209 - Completed
+2023-11-29 11:03:52.043 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 11:03:52.734 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 11:03:52.734 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 11:03:52.966 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.23s)
+2023-11-29 11:03:52.966 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 11:03:52.994 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 11:03:53.400 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 11:03:53.753 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 11:03:53.753 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 11:23:30.897 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 11:23:31.299 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 11:23:31.300 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 11:23:31.762 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.46s)
+2023-11-29 11:23:31.762 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 11:23:31.798 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 11:23:32.224 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 11:23:32.530 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 11:23:32.531 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 11:23:55.935 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-DPM.txt
+2023-11-29 11:24:17.718 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-SDP.txt
+2023-11-29 11:24:57.828 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-DPM.txt
+2023-11-29 11:25:37.886 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-SDP.txt
+2023-11-29 11:26:03.701 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-DPM.txt
+2023-11-29 11:26:30.244 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-SDP.txt
+2023-11-29 11:26:48.773 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-DPM.txt
+2023-11-29 11:27:07.303 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-SDP.txt
+2023-11-29 11:27:30.873 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-DPM.txt
+2023-11-29 11:27:54.191 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-SDP.txt
+2023-11-29 11:28:25.511 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-DPM.txt
+2023-11-29 11:28:57.985 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-SDP.txt
+2023-11-29 11:29:24.686 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-DPM.txt
+2023-11-29 11:29:51.504 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-SDP.txt
+2023-11-29 11:29:51.923 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 11:29:53.228 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 11:29:53.804 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=0.58s)
+2023-11-29 11:29:53.804 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 11:29:53.851 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 11:29:55.827 | INFO     | __main__:main:167 - 
+Average forward time: 21.40 ms, Average track time: 6.24 ms, Average inference time: 27.64 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.957
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.715
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.830
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.786
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.590
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+
+2023-11-29 11:29:55.828 | INFO     | __main__:main:177 - Found 21 groundtruths and 84 test files.
+2023-11-29 11:29:55.828 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 11:29:55.828 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 11:29:55.828 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 11:30:00.828 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-FRCNN...
+2023-11-29 11:30:01.020 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-SDP...
+2023-11-29 11:30:01.210 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-29 11:30:01.210 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-29 11:30:01.210 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-SDP...
+2023-11-29 11:30:01.405 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-29 11:30:01.405 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-FRCNN...
+2023-11-29 11:30:01.614 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-FRCNN...
+2023-11-29 11:30:01.914 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-SDP...
+2023-11-29 11:30:02.038 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-SDP...
+2023-11-29 11:30:02.453 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-29 11:30:02.453 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-29 11:30:02.453 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-29 11:30:02.453 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-29 11:30:02.453 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-DPM...
+2023-11-29 11:30:02.634 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-29 11:30:02.634 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-29 11:30:02.634 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-29 11:30:02.634 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-SDP...
+2023-11-29 11:30:02.815 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-DPM...
+2023-11-29 11:30:03.153 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-FRCNN...
+2023-11-29 11:30:03.276 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-DPM...
+2023-11-29 11:30:03.691 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-29 11:30:03.691 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-29 11:30:03.692 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-FRCNN...
+2023-11-29 11:30:03.872 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-29 11:30:03.872 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-29 11:30:03.872 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-29 11:30:03.872 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-SDP...
+2023-11-29 11:30:04.056 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-DPM...
+2023-11-29 11:30:04.179 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-29 11:30:04.179 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-DPM...
+2023-11-29 11:30:04.363 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-29 11:30:04.364 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-FRCNN...
+2023-11-29 11:30:04.913 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-29 11:30:04.913 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-DPM...
+2023-11-29 11:30:05.106 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-FRCNN...
+2023-11-29 11:30:05.302 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-DPM...
+2023-11-29 11:30:05.499 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-SDP...
+2023-11-29 11:30:05.714 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-29 11:30:05.714 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-29 11:30:05.714 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-29 11:30:05.714 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 11:30:08.197 | INFO     | __main__:main:209 - Completed
+2023-11-29 12:14:59.816 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 12:15:00.214 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 12:15:00.214 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 12:15:00.479 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.27s)
+2023-11-29 12:15:00.480 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 12:15:00.497 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 12:15:00.813 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 12:15:01.120 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 12:15:01.120 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 12:15:24.019 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-FRCNN.txt
+2023-11-29 12:17:03.311 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 12:17:03.709 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 12:17:03.709 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 12:17:03.975 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.26s)
+2023-11-29 12:17:03.975 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 12:17:03.992 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 12:17:04.315 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 12:17:04.623 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 12:17:04.623 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 12:17:27.476 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-FRCNN.txt
+2023-11-29 12:18:07.536 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-FRCNN.txt
+2023-11-29 12:18:34.328 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-FRCNN.txt
+2023-11-29 12:18:53.014 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-FRCNN.txt
+2023-11-29 12:19:15.662 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-FRCNN.txt
+2023-11-29 12:19:47.494 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-FRCNN.txt
+2023-11-29 12:20:14.157 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-FRCNN.txt
+2023-11-29 12:20:14.375 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 12:20:15.037 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 12:20:15.453 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=0.42s)
+2023-11-29 12:20:15.454 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 12:20:15.476 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 12:20:16.346 | INFO     | __main__:main:167 - 
+Average forward time: 20.83 ms, Average track time: 6.10 ms, Average inference time: 26.94 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.957
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.715
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.830
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.786
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.590
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+
+2023-11-29 12:20:16.346 | INFO     | __main__:main:177 - Found 21 groundtruths and 14 test files.
+2023-11-29 12:20:16.346 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 12:20:16.346 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 12:20:16.347 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 12:20:18.883 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-FRCNN...
+2023-11-29 12:20:19.074 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-FRCNN...
+2023-11-29 12:20:19.281 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-FRCNN...
+2023-11-29 12:20:19.538 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-FRCNN...
+2023-11-29 12:20:19.660 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-FRCNN...
+2023-11-29 12:20:19.839 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-FRCNN...
+2023-11-29 12:20:20.333 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-FRCNN...
+2023-11-29 12:20:20.526 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 12:20:21.325 | INFO     | __main__:main:209 - Completed
+2023-11-29 12:21:34.321 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 12:21:34.719 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 12:21:34.719 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 12:21:34.733 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-11-29 12:21:34.733 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 12:21:34.734 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 12:21:34.911 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 12:21:35.267 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 12:21:35.267 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 12:21:52.287 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-29 12:22:08.584 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-29 12:22:24.913 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-29 12:23:23.462 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-29 12:24:21.939 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-29 12:25:20.147 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-29 12:25:58.214 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-29 12:26:36.690 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-29 12:27:15.143 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-29 12:27:33.639 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-29 12:27:52.096 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-29 12:28:10.604 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-29 12:28:33.795 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-29 12:28:56.953 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-29 12:29:20.286 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-29 12:29:52.243 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-DPM.txt
+2023-11-29 12:30:23.495 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-FRCNN.txt
+2023-11-29 12:30:55.093 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-SDP.txt
+2023-11-29 12:31:22.128 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-DPM.txt
+2023-11-29 12:31:48.983 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-FRCNN.txt
+2023-11-29 12:32:16.136 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-SDP.txt
+2023-11-29 12:32:17.099 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 12:32:20.221 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 12:32:21.589 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=1.37s)
+2023-11-29 12:32:21.589 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 12:32:21.703 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 12:32:22.974 | INFO     | __main__:main:167 - 
+Average forward time: 20.11 ms, Average track time: 7.64 ms, Average inference time: 27.75 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-11-29 12:32:22.975 | INFO     | __main__:main:177 - Found 21 groundtruths and 56 test files.
+2023-11-29 12:32:22.975 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 12:32:22.975 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 12:32:22.975 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 12:32:27.681 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-FRCNN...
+2023-11-29 12:32:27.872 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-29 12:32:27.872 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-29 12:32:27.872 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-29 12:32:27.872 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-FRCNN...
+2023-11-29 12:32:28.124 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-FRCNN...
+2023-11-29 12:32:28.307 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-29 12:32:28.307 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-29 12:32:28.307 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-29 12:32:28.307 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-29 12:32:28.307 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-29 12:32:28.308 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-29 12:32:28.308 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-29 12:32:28.308 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-FRCNN...
+2023-11-29 12:32:28.474 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-29 12:32:28.474 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-29 12:32:28.474 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-FRCNN...
+2023-11-29 12:32:28.654 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-29 12:32:28.654 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-29 12:32:28.654 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-29 12:32:28.654 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-29 12:32:28.654 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-29 12:32:28.655 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-FRCNN...
+2023-11-29 12:32:29.112 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-29 12:32:29.112 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-FRCNN...
+2023-11-29 12:32:29.306 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-29 12:32:29.306 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-29 12:32:29.306 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-29 12:32:29.306 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 12:32:30.114 | INFO     | __main__:main:209 - Completed
+2023-11-29 17:49:50.523 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 17:49:50.919 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 17:49:50.919 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 17:49:50.942 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.02s)
+2023-11-29 17:49:50.942 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 17:49:50.943 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 17:49:51.122 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 17:49:51.909 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 17:49:51.909 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 17:50:08.002 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-DPM.txt
+2023-11-29 17:50:22.952 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-FRCNN.txt
+2023-11-29 17:50:38.127 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-01-SDP.txt
+2023-11-29 17:51:35.108 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-DPM.txt
+2023-11-29 17:52:32.384 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-FRCNN.txt
+2023-11-29 17:53:29.018 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-03-SDP.txt
+2023-11-29 17:54:05.869 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-DPM.txt
+2023-11-29 17:54:46.241 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-FRCNN.txt
+2023-11-29 17:55:34.355 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-06-SDP.txt
+2023-11-29 17:55:55.538 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-DPM.txt
+2023-11-29 17:56:17.400 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-FRCNN.txt
+2023-11-29 17:56:38.873 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-07-SDP.txt
+2023-11-29 17:57:05.765 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-DPM.txt
+2023-11-29 17:57:32.615 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-FRCNN.txt
+2023-11-29 17:57:59.876 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-08-SDP.txt
+2023-11-29 17:58:35.741 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-DPM.txt
+2023-11-29 17:59:11.270 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-FRCNN.txt
+2023-11-29 17:59:47.554 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-12-SDP.txt
+2023-11-29 18:00:18.590 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-DPM.txt
+2023-11-29 18:00:50.169 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-FRCNN.txt
+2023-11-29 18:01:21.763 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-14-SDP.txt
+2023-11-29 18:01:22.733 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 18:01:25.914 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 18:01:27.321 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=1.41s)
+2023-11-29 18:01:27.321 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 18:01:27.437 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 18:01:28.700 | INFO     | __main__:main:167 - 
+Average forward time: 24.20 ms, Average track time: 5.76 ms, Average inference time: 29.96 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-11-29 18:01:28.708 | INFO     | __main__:main:177 - Found 21 groundtruths and 56 test files.
+2023-11-29 18:01:28.708 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 18:01:28.708 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 18:01:28.708 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 18:01:33.300 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-FRCNN...
+2023-11-29 18:01:33.493 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-29 18:01:33.493 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-29 18:01:33.493 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-29 18:01:33.493 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-FRCNN...
+2023-11-29 18:01:33.746 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-FRCNN...
+2023-11-29 18:01:33.931 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-29 18:01:33.931 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-29 18:01:33.931 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-29 18:01:33.931 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-29 18:01:33.932 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-29 18:01:33.932 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-29 18:01:33.932 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-29 18:01:33.932 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-FRCNN...
+2023-11-29 18:01:34.099 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-29 18:01:34.099 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-29 18:01:34.099 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-FRCNN...
+2023-11-29 18:01:34.280 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-29 18:01:34.280 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-29 18:01:34.280 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-29 18:01:34.280 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-29 18:01:34.280 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-29 18:01:34.280 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-FRCNN...
+2023-11-29 18:01:34.743 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-29 18:01:34.743 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-FRCNN...
+2023-11-29 18:01:34.940 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-29 18:01:34.941 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-29 18:01:34.941 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-29 18:01:34.941 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 18:01:35.736 | INFO     | __main__:main:209 - Completed
+2023-11-29 18:13:02.907 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-29 18:13:03.321 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-29 18:13:03.321 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-29 18:13:03.595 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.27s)
+2023-11-29 18:13:03.595 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-29 18:13:03.613 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-29 18:13:03.926 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-29 18:13:04.232 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-29 18:13:04.233 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-29 18:13:30.831 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-02-FRCNN.txt
+2023-11-29 18:14:18.035 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-04-FRCNN.txt
+2023-11-29 18:14:48.983 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-05-FRCNN.txt
+2023-11-29 18:15:10.260 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-09-FRCNN.txt
+2023-11-29 18:15:37.302 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-10-FRCNN.txt
+2023-11-29 18:16:13.309 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-11-FRCNN.txt
+2023-11-29 18:16:43.509 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT17-test/yolox_x_mix_det_results/data/MOT17-13-FRCNN.txt
+2023-11-29 18:16:43.726 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-11-29 18:16:44.390 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-11-29 18:16:44.813 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=0.42s)
+2023-11-29 18:16:44.813 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-11-29 18:16:44.837 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-11-29 18:16:45.713 | INFO     | __main__:main:167 - 
+Average forward time: 26.64 ms, Average track time: 4.53 ms, Average inference time: 31.17 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.957
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.715
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.830
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.786
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.590
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+
+2023-11-29 18:16:45.713 | INFO     | __main__:main:177 - Found 21 groundtruths and 56 test files.
+2023-11-29 18:16:45.713 | INFO     | __main__:main:178 - Available LAP solvers ['lap', 'scipy']
+2023-11-29 18:16:45.713 | INFO     | __main__:main:179 - Default LAP solver 'lap'
+2023-11-29 18:16:45.714 | INFO     | __main__:main:180 - Loading files.
+2023-11-29 18:16:50.184 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-13-FRCNN...
+2023-11-29 18:16:50.377 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-FRCNN, skipping.
+2023-11-29 18:16:50.378 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-FRCNN, skipping.
+2023-11-29 18:16:50.378 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-SDP, skipping.
+2023-11-29 18:16:50.378 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-11-FRCNN...
+2023-11-29 18:16:50.588 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-05-FRCNN...
+2023-11-29 18:16:50.857 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-DPM, skipping.
+2023-11-29 18:16:50.858 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-SDP, skipping.
+2023-11-29 18:16:50.858 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-SDP, skipping.
+2023-11-29 18:16:50.858 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-DPM, skipping.
+2023-11-29 18:16:50.858 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-DPM, skipping.
+2023-11-29 18:16:50.858 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-FRCNN, skipping.
+2023-11-29 18:16:50.858 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-SDP, skipping.
+2023-11-29 18:16:50.858 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-09-FRCNN...
+2023-11-29 18:16:51.002 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-FRCNN, skipping.
+2023-11-29 18:16:51.002 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-FRCNN, skipping.
+2023-11-29 18:16:51.002 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-10-FRCNN...
+2023-11-29 18:16:51.185 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-SDP, skipping.
+2023-11-29 18:16:51.185 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-07-SDP, skipping.
+2023-11-29 18:16:51.185 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-06-DPM, skipping.
+2023-11-29 18:16:51.185 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-14-DPM, skipping.
+2023-11-29 18:16:51.185 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-08-FRCNN, skipping.
+2023-11-29 18:16:51.186 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-04-FRCNN...
+2023-11-29 18:16:51.601 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-01-DPM, skipping.
+2023-11-29 18:16:51.602 | INFO     | __main__:compare_dataframes:34 - Comparing MOT17-02-FRCNN...
+2023-11-29 18:16:51.885 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-03-DPM, skipping.
+2023-11-29 18:16:51.886 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-FRCNN, skipping.
+2023-11-29 18:16:51.886 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT17-12-SDP, skipping.
+2023-11-29 18:16:51.886 | INFO     | __main__:main:188 - Running metrics
+2023-11-29 18:16:52.688 | INFO     | __main__:main:209 - Completed
+2023-11-30 14:41:16.827 | INFO     | __main__:main:89 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-30 14:41:17.229 | INFO     | __main__:main:99 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-30 14:41:17.230 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-30 14:41:17.492 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.26s)
+2023-11-30 14:41:17.492 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-30 14:41:17.510 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-30 14:41:17.816 | INFO     | __main__:main:130 - loading checkpoint
+2023-11-30 14:41:18.123 | INFO     | __main__:main:135 - loaded checkpoint done.
+2023-11-30 14:41:18.123 | INFO     | __main__:main:141 - 	Fusing model...
+2023-11-30 14:41:29.981 | ERROR    | yolox.core.launch:launch:90 - An error has been caught in function 'launch', process 'MainProcess' (180749), thread 'MainThread' (140583666124608):
+Traceback (most recent call last):
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 224, in <module>
+    launch(
+    └ <function launch at 0x7fdb55e35790>
+
+> File "/home/wangyc/My_OC_SORT/yolox/core/launch.py", line 90, in launch
+    main_func(*args)
+    │          └ (╒══════════════════╤══════════════════════════════════════════════════════════════════════════════════════════════╕
+    │            │ keys  ...
+    └ <function main at 0x7fdb143c8e50>
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 163, in main
+    *_, summary = evaluator.evaluate_ocsort(
+                  │         └ <function MOTEvaluator.evaluate_ocsort at 0x7fdb4680dc10>
+                  └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fdb143cb8b0>
+
+  File "/home/wangyc/My_OC_SORT/yolox/evaluators/mot_evaluator.py", line 486, in evaluate_ocsort
+    online_targets = tracker.update(outputs[0], imgs, np_imgs[0].numpy(), info_imgs, self.img_size, tag)  # for CMC
+                     │       │      │           │     │                   │          │    │         └ 'MOT17-02-FRCNN:300'
+                     │       │      │           │     │                   │          │    └ (800, 1440)
+                     │       │      │           │     │                   │          └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fdb143cb8b0>
+                     │       │      │           │     │                   └ [tensor([1080]), tensor([1920]), tensor([300]), tensor([1]), ['MOT17-02-FRCNN/img1/000300.jpg']]
+                     │       │      │           │     └ tensor([[[[ 43,  57,  56],
+                     │       │      │           │                 [ 43,  57,  56],
+                     │       │      │           │                 [ 43,  57,  56],
+                     │       │      │           │                 ...,
+                     │       │      │           │                 [106,  95,  98],
+                     │       │      │           │         ...
+                     │       │      │           └ tensor([[[[-1.1592, -1.1592, -1.1592,  ..., -0.1656, -0.1656, -0.1656],
+                     │       │      │                       [-1.1592, -1.1592, -1.1592,  ..., -0.1656, ...
+                     │       │      └ [tensor([[ 6.5250e+02,  3.1100e+02,  7.6050e+02,  6.9100e+02,  9.9951e-01,
+                     │       │                  9.5850e-01,  0.0000e+00],
+                     │       │                [ 7.49...
+                     │       └ <function OCSort.update at 0x7fdb4680d430>
+                     └ <trackers.ocsort_tracker.ocsort.OCSort object at 0x7fdb12846a60>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/ocsort.py", line 324, in update
+    transform = self.cmc.compute_affine(img_numpy, dets[:, :4], tag)
+                │    │   │              │          │            └ 'MOT17-02-FRCNN:300'
+                │    │   │              │          └ array([[ 8.80875000e+02,  4.19850006e+02,  1.02667505e+03,
+                │    │   │              │                     9.32850037e+02,  9.58028078e-01,  1.22714990e+03],
+                │    │   │              │                  ...
+                │    │   │              └ array([[[ 43,  57,  56],
+                │    │   │                        [ 43,  57,  56],
+                │    │   │                        [ 43,  57,  56],
+                │    │   │                        ...,
+                │    │   │                        [106,  95,  98],
+                │    │   │                        [106...
+                │    │   └ <function CMCComputer.compute_affine at 0x7fdb4680bb80>
+                │    └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fdb12846820>
+                └ <trackers.ocsort_tracker.ocsort.OCSort object at 0x7fdb12846a60>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/cmc.py", line 99, in compute_affine
+    A = self.comp_function(img, mask, tag)
+        │    │             │    │     └ 'MOT17-02-FRCNN:300'
+        │    │             │    └ array([[1, 1, 1, ..., 1, 1, 1],
+        │    │             │             [1, 1, 1, ..., 1, 1, 1],
+        │    │             │             [1, 1, 1, ..., 1, 1, 1],
+        │    │             │             ...,
+        │    │             │             [1, 1, 1, ...
+        │    │             └ array([[55, 55, 55, ..., 97, 97, 97],
+        │    │                      [55, 55, 55, ..., 97, 97, 97],
+        │    │                      [55, 55, 55, ..., 97, 97, 97],
+        │    │                      ...,...
+        │    └ <bound method CMCComputer._affine_file of <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fdb12846820>>
+        └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fdb12846820>
+
+  File "/home/wangyc/My_OC_SORT/trackers/ocsort_tracker/cmc.py", line 111, in _affine_file
+    return self.file_affines[name][int(num) - 1]
+           │    │            │         └ '300'
+           │    │            └ 'MOT17-02-FRCNN'
+           │    └ {'MOT17-02-FRCNN': [array([[1., 0., 0.],
+           │             [0., 1., 0.]]), array([[ 1.000067e+00,  4.600000e-05, -5.621300e-02],
+           │             ...
+           └ <trackers.ocsort_tracker.cmc.CMCComputer object at 0x7fdb12846820>
+
+IndexError: list index out of range

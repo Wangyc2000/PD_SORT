@@ -1,0 +1,90 @@
+2023-12-01 11:18:13.771 | INFO     | __main__:main:91 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot20.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_mot20_ch.py', expn='yolox_x_mix_mot20_ch', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=True, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-12-01 11:18:14.181 | INFO     | __main__:main:101 - Model Summary: Params: 99.00M, Gflops: 987.11
+2023-12-01 11:18:14.181 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-12-01 11:18:16.363 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=2.18s)
+2023-12-01 11:18:16.364 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-12-01 11:18:16.531 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-12-01 11:18:17.982 | INFO     | __main__:main:132 - loading checkpoint
+2023-12-01 11:18:18.300 | INFO     | __main__:main:137 - loaded checkpoint done.
+2023-12-01 11:18:18.300 | INFO     | __main__:main:143 - 	Fusing model...
+2023-12-01 11:18:37.261 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-01.txt
+2023-12-01 11:20:31.403 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-02.txt
+2023-12-01 11:22:12.352 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-03.txt
+2023-12-01 11:24:52.594 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-05.txt
+2023-12-01 11:24:54.447 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-12-01 11:25:00.537 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-12-01 11:25:03.929 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=3.39s)
+2023-12-01 11:25:03.929 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-12-01 11:25:04.114 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-12-01 11:25:16.914 | INFO     | __main__:main:169 - 
+Average forward time: 20.12 ms, Average track time: 15.29 ms, Average inference time: 35.41 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.501
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.643
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.618
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.068
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.429
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.007
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.069
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.526
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.081
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.454
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.646
+
+2023-12-01 11:25:16.915 | INFO     | __main__:main:183 - Found 4 groundtruths and 8 test files.
+2023-12-01 11:25:16.915 | INFO     | __main__:main:184 - Available LAP solvers ['lap', 'scipy']
+2023-12-01 11:25:16.915 | INFO     | __main__:main:185 - Default LAP solver 'lap'
+2023-12-01 11:25:16.915 | INFO     | __main__:main:186 - Loading files.
+2023-12-01 11:25:25.851 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-05...
+2023-12-01 11:25:30.783 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-03...
+2023-12-01 11:25:33.133 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-01...
+2023-12-01 11:25:33.314 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-02...
+2023-12-01 11:25:34.652 | INFO     | __main__:main:194 - Running metrics
+2023-12-01 11:25:38.935 | INFO     | __main__:main:215 - Completed
+2023-12-01 11:27:06.524 | INFO     | __main__:main:91 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot20.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_mot20_ch.py', expn='yolox_x_mix_mot20_ch', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=True, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-12-01 11:27:06.931 | INFO     | __main__:main:101 - Model Summary: Params: 99.00M, Gflops: 987.11
+2023-12-01 11:27:06.931 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-12-01 11:27:06.942 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.01s)
+2023-12-01 11:27:06.942 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-12-01 11:27:06.942 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-12-01 11:27:07.115 | INFO     | __main__:main:132 - loading checkpoint
+2023-12-01 11:27:07.433 | INFO     | __main__:main:137 - loaded checkpoint done.
+2023-12-01 11:27:07.433 | INFO     | __main__:main:143 - 	Fusing model...
+2023-12-01 11:28:45.121 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-04.txt
+2023-12-01 11:29:28.977 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-06.txt
+2023-12-01 11:29:53.567 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-07.txt
+2023-12-01 11:30:27.092 | INFO     | utils.utils:write_results_no_score:32 - save results to res_mot/MOT20-test/yolox_x_mix_mot20_ch_results/data/MOT20-08.txt
+2023-12-01 11:30:28.136 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:557 - Evaluate in main process...
+2023-12-01 11:30:31.536 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - Loading and preparing results...
+2023-12-01 11:30:33.227 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:586 - DONE (t=1.69s)
+2023-12-01 11:30:33.227 | INFO     | pycocotools.coco:loadRes:363 - creating index...
+2023-12-01 11:30:33.335 | INFO     | pycocotools.coco:loadRes:363 - index created!
+2023-12-01 11:30:34.403 | INFO     | __main__:main:169 - 
+Average forward time: 19.99 ms, Average track time: 16.47 ms, Average inference time: 36.46 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+2023-12-01 11:30:34.403 | INFO     | __main__:main:183 - Found 4 groundtruths and 16 test files.
+2023-12-01 11:30:34.403 | INFO     | __main__:main:184 - Available LAP solvers ['lap', 'scipy']
+2023-12-01 11:30:34.403 | INFO     | __main__:main:185 - Default LAP solver 'lap'
+2023-12-01 11:30:34.404 | INFO     | __main__:main:186 - Loading files.
+2023-12-01 11:30:45.762 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-05...
+2023-12-01 11:30:50.860 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT20-06, skipping.
+2023-12-01 11:30:50.860 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT20-04, skipping.
+2023-12-01 11:30:50.860 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-03...
+2023-12-01 11:30:53.268 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-01...
+2023-12-01 11:30:53.448 | INFO     | __main__:compare_dataframes:34 - Comparing MOT20-02...
+2023-12-01 11:30:54.996 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT20-07, skipping.
+2023-12-01 11:30:54.996 | WARNING  | __main__:compare_dataframes:41 - No ground truth for MOT20-08, skipping.
+2023-12-01 11:30:54.996 | INFO     | __main__:main:194 - Running metrics
+2023-12-01 11:30:59.332 | INFO     | __main__:main:215 - Completed

@@ -1,0 +1,78 @@
+2023-11-10 14:49:21.283 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 14:49:21.698 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-10 14:49:21.698 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-10 14:49:21.856 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.16s)
+2023-11-10 14:49:21.856 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-10 14:49:21.865 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-10 14:49:22.021 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-10 14:49:22.522 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-10 14:49:22.522 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-10 14:49:22.952 | ERROR    | yolox.core.launch:launch:90 - An error has been caught in function 'launch', process 'MainProcess' (905401), thread 'MainThread' (140362817500992):
+Traceback (most recent call last):
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 214, in <module>
+    launch(
+    └ <function launch at 0x7fa83c8f4670>
+
+> File "/home/wangyc/My_OC_SORT/yolox/core/launch.py", line 90, in launch
+    main_func(*args)
+    │          └ (╒══════════════════╤══════════════════════════════════════════════════════════════════════════════════════════════╕
+    │            │ keys  ...
+    └ <function main at 0x7fa7a89b8940>
+
+  File "/home/wangyc/My_OC_SORT/tools/run_ocsort.py", line 153, in main
+    *_, summary = evaluator.evaluate_ocsort(
+                  │         └ <function MOTEvaluator.evaluate_ocsort at 0x7fa7daf955e0>
+                  └ <yolox.evaluators.mot_evaluator.MOTEvaluator object at 0x7fa7a89cb5b0>
+
+  File "/home/wangyc/My_OC_SORT/yolox/evaluators/mot_evaluator.py", line 418, in evaluate_ocsort
+    for cur_iter, (imgs, _, info_imgs, ids) in enumerate(
+                                       └ []
+
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/tqdm/std.py", line 1182, in __iter__
+    for obj in iterable:
+               └ <torch.utils.data.dataloader.DataLoader object at 0x7fa7a89c6220>
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           │    └ <function _MultiProcessingDataLoaderIter._next_data at 0x7fa8b3e7ef70>
+           └ <torch.utils.data.dataloader._MultiProcessingDataLoaderIter object at 0x7fa7a41bf670>
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+           │    │             └ <torch._utils.ExceptionWrapper object at 0x7fa7a6f728b0>
+           │    └ <function _MultiProcessingDataLoaderIter._process_data at 0x7fa8b3e820d0>
+           └ <torch.utils.data.dataloader._MultiProcessingDataLoaderIter object at 0x7fa7a41bf670>
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+    │    └ <function ExceptionWrapper.reraise at 0x7fa8bd8b6430>
+    └ <torch._utils.ExceptionWrapper object at 0x7fa7a6f728b0>
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+          └ AssertionError('Caught AssertionError in DataLoader worker process 0.\nOriginal Traceback (most recent call last):\n  File "/...
+
+AssertionError: Caught AssertionError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/wangyc/.conda/envs/ocsort/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/wangyc/My_OC_SORT/yolox/data/datasets/datasets_wrapper.py", line 121, in wrapper
+    ret_val = getitem_fn(self, index)
+  File "/home/wangyc/My_OC_SORT/yolox/data/datasets/mot.py", line 129, in __getitem__
+    img, target, img_info, img_id = self.pull_item(index)
+  File "/home/wangyc/My_OC_SORT/yolox/data/datasets/mot.py", line 103, in pull_item
+    assert img is not None
+AssertionError
+
+2023-11-10 14:52:53.493 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 14:52:54.282 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
+2023-11-10 14:53:21.490 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2023-11-10 14:53:21.608 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.12s)
+2023-11-10 14:53:21.608 | INFO     | pycocotools.coco:__init__:88 - creating index...
+2023-11-10 14:53:21.622 | INFO     | pycocotools.coco:__init__:88 - index created!
+2023-11-10 14:53:21.876 | INFO     | __main__:main:120 - loading checkpoint
+2023-11-10 14:53:22.268 | INFO     | __main__:main:125 - loaded checkpoint done.
+2023-11-10 14:53:22.269 | INFO     | __main__:main:131 - 	Fusing model...
+2023-11-10 14:53:45.027 | INFO     | __main__:main:79 - Args: Namespace(aspect_ratio_thresh=1.6, asso='iou', batch_size=1, camid=0, ckpt='pretrained/ocsort_x_mot17.pth.tar', conf=0.1, dataset='mot', deltat=3, demo_type='image', device='gpu', devices=1, dist_backend='nccl', dist_url=None, exp_file='exps/yolox_x_mix_det.py', expn='yolox_x_mix_det', fp16=True, fuse=True, gt_type='_val_half', hp=False, inertia=0.2, iou_thresh=0.3, local_rank=0, machine_rank=0, match_thresh=0.9, min_box_area=100, min_hits=3, mot20=False, name=None, nms=0.7, num_machines=1, opts=[], out_path=None, output_dir='res_mot', path='./videos/demo.mp4', public=False, raw_results_path='exps/permatrack_kitti_test/', save_result=False, seed=None, speed=False, test=False, track_buffer=30, track_thresh=0.6, trt=False, tsize=None, use_byte=False)
+2023-11-10 14:53:45.787 | INFO     | __main__:main:89 - Model Summary: Params: 99.00M, Gflops: 793.21
