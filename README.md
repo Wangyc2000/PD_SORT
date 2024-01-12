@@ -59,7 +59,7 @@ python3 tools/mix_data_{ablation/mot17/mot20}.py
 - DanceTrack-val:
 
 ```
-# CUDA_VISIBLE_DEVICES=1 python tools/run_ocsort_dance.py -f exps/example/mot/yolox_dancetrack_val.py -c pretrained/ocsort_dance_model.pth.tar -b 1 -d 1 --fp16 --fuse
+# CUDA_VISIBLE_DEVICES=1 python tools/run_ocsort_dance.py -f exps/yolox_dancetrack_val.py -c pretrained/ocsort_dance_model.pth.tar -b 1 -d 1 --fp16 --fuse
 python tools/run_ocsort_dance.py -f exps/example/mot/yolox_dancetrack_val.py -c pretrained/ocsort_dance_model.pth.tar -b 1 -d 1 --fp16 --fuse
 
 # HOTA(CLEAR Identity) evaluation
@@ -69,7 +69,7 @@ python3 external/TrackEval/scripts/run_mot_challenge.py --SPLIT_TO_EVAL val --ME
 - DanceTrack-test:
 
 ```
-python tools/run_ocsort_dance.py -f exps/example/mot/yolox_dancetrack_val.py -c pretrained/ocsort_dance_model.pth.tar -b 1 -d 1 --fp16 --fuse --test
+python tools/run_ocsort_dance.py -f exps/yolox_dancetrack_test.py -c pretrained/ocsort_dance_model.pth.tar -b 1 -d 1 --fp16 --fuse --test
 ```
 
 
